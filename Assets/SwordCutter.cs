@@ -16,7 +16,9 @@ public class SwordCutter : MonoBehaviour {
         {
             pieces[1].AddComponent<Rigidbody>();
             MeshCollider temp = pieces[1].AddComponent<MeshCollider>();
-            temp.convex = true; 
+            temp.convex = true;
+            pieces[0].AddComponent<Fruit>();
+            pieces[1].AddComponent<Fruit>();
         }
 
         // Destroy(pieces[1], 1);
